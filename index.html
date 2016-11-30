@@ -4,13 +4,17 @@
 		<meta charset="utf-8">
 		<title>ronger.js</title>
 		<script src="ronger.js" charset="utf-8"></script>
+		<style media="screen">
+			#test,.test{width: 200px;height: 120px;background-color: #f00;}
+		</style>
 	</head>
 	<body>
 		<div class="test"></div>
-		<div class="test"></div>
+		<div id="test" class="test"></div>
 		<script type="text/javascript">
-			var t  = jR(".test");
-			console.log(t.hasClass('test'));;
+			var t = jR(".test");
+			t.remove();
+			//jR("#test").remove();
 		</script>
 	</body>
 </html>
