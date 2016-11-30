@@ -54,7 +54,11 @@
             Array.from(this).forEach(function(el,i){
                 el.parentNode.removeChild(el);
             });
+        },
+        append: function(item){
+            this[0].appendChild(item);
         }
+
     }
     ronger.prototype.init.prototype = ronger.prototype;
     ronger.ajax = function(){

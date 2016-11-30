@@ -12,8 +12,9 @@
 		<div class="test"></div>
 		<div id="test" class="test"></div>
 		<script type="text/javascript">
-			var t = jR(".test");
-			t.remove();
+			var t = jR("#test");
+			var img = new Image();
+			t.append(img);
 			//jR("#test").remove();
 		</script>
 	</body>
